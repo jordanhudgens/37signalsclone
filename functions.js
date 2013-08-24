@@ -1,3 +1,4 @@
+
 function getDay() {
 	var d=new Date();
 	var weekday=new Array(7);
@@ -14,46 +15,47 @@ function getDay() {
 }
 
 $(document).ready ( function () {
-	$("#box1").mouseover( function () {
-		$("h1").addClass("hoverAction");
-		$("h1").html("Basecamp is the project management software you wished you had on your last project.");
-		$("h3").addClass("hoverActionH3");
-		$("h3").html("Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.");
+	$(".centerBoxes #box1").mouseover( function () {
+		$(".basecampH1").show();
+		$(".basecampH3").show();
+		$("#box1 .arrows").show();
+		$("#defaultHero").hide();
 	});
 	
-	$("#box2").mouseover( function () {
-		$("h1").addClass("hoverAction");
-		$("h1").html("Highrise remembers the normal things about people you'd normal forget.");
-		$("h3").addClass("hoverActionH3");
-		$("h3").html("Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.");
+	$(".centerBoxes #box2").mouseover( function () {
+		$(".highriseH1").show();
+		$(".highriseH3").show();
+		$("#box2 .arrows").show();
+		$("#defaultHero").hide();
 	});
 	
-	$("#box3").mouseover( function () {
-		$("h1").addClass("hoverAction");
-		$("h1").html("From near or far, Campfire helps teams work together over the web in real-time.");
-		$("h3").addClass("hoverActionH3");
-		$("h3").html("Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It's game changing. We couldn't run our own business without Campfire.");
+	$(".centerBoxes #box3").mouseover( function () {
+		$(".campfireH1").show();
+		$(".campfireH3").show();
+		$("#box3 .arrows").show();
+		$("#defaultHero").hide();
 	});
 	
-	
-	$("#box1").mouseout( function () {
-		$("h1").removeClass("hoverAction");
-		$("h1").html("Making collaboration productive and <br>enjoyable for people every day.");
-		$("h3").removeClass("hoverActionH3");
-		$("h3").html("Frustration-free web-based apps for collaboration, sharing information, and making decisions.");
+	$(".centerBoxes #box1").mouseout( function () {
+		$(".basecampH1").hide();
+		$(".basecampH3").hide();
+		$(".arrows").hide();
+		$("#defaultHero").show();
 	});
 	
-	$("#box2").mouseout( function () {
-		$("h1").removeClass("hoverAction");
-		$("h1").html("Making collaboration productive and <br>enjoyable for people every day.");
-		$("h3").removeClass("hoverActionH3");
-		$("h3").html("Frustration-free web-based apps for collaboration, sharing information, and making decisions.");
+	$(".centerBoxes #box2").mouseout( function () {
+		$(".highriseH1").hide();
+		$(".highriseH3").hide();
+		$(".arrows").hide();
+		$("#defaultHero").show();
+		
 	});
 	
-	$("#box3").mouseout( function () {
-		$("h1").removeClass("hoverAction");
-		$("h1").html("Making collaboration productive and <br>enjoyable for people every day.");
-		$("h3").removeClass("hoverActionH3");
-		$("h3").html("Frustration-free web-based apps for collaboration, sharing information, and making decisions.");
+	$(".centerBoxes #box3").mouseout( function () {
+		$(".campfireH1").hide();
+		$(".campfireH3").hide();
+		$(".arrows").hide();
+		$("#defaultHero").show();
+		
 	});
 });
